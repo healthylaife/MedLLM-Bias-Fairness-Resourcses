@@ -1,3 +1,4 @@
+**Overview of Med LLM characteristics and ethical deployment considerations.**
 ![Model Architecture](Figures/future.png)
 -----
 **Benchmarking Datasets for Bias Evaluation of Med LLMs.**
@@ -33,7 +34,7 @@
 | BRIDGE          | A multilingual benchmark (87 tasks in 9 languages) evaluating LLMs for real-world clinical practice using structured evaluation of reasoning, hallucination, and safety. | 52 LLMs including GPT-4o, Gemini, LLaMA 4, DeepSeek-R1 | BRIDGE                                       | MQA, clinical decision-making, reasoning, safety | Factuality, Reasoning bias, hallucination |
 -----
 
-## Table 3: Bias Evaluation Metrics Commonly Used in Med LLMs
+**Bias Evaluation Metrics Commonly Used in Med LLMs**
 
 | Eval Type                  | Method                              | Description (what is measured)                                                               |
 |---------------------------|--------------------------------------|----------------------------------------------------------------------------------------------|
@@ -64,7 +65,7 @@
 |                           | Maj@5                               | Tests answer accuracy from the majority of votes                                             |
 -----
 
-##Timeline for LLMs Focused on Medical-specific Tasks
+**Timeline for LLMs Focused on Medical-specific Tasks**
 
 | LLM           | Date           | Token Size   | Medical | General | Developer                   | Website or Paper |
 |---------------|----------------|--------------|---------|---------|------------------------------|------------------|
