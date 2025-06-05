@@ -82,12 +82,12 @@
 | LLaMA 2       | July 2023      | 70 billion   | ✗       | ✓       | Meta                        | [Link](https://ai.meta.com/llama/)                |
 | Mistral 7B    | September 2023 | 7.3 billion  | ✗       | ✓       | Mistral AI                  | [Link](https://mistral.ai/news/announcing-mistral-7b/) |
 | MediTron      | November 2023  | 70 billion   | ✓       | ✗       | EPFL LLM Team               | [Link](https://arxiv.org/abs/2311.16079)          |
-| GatorTronGPT  | November 2023  | 22 billion   | ✓       | ✗       | UF HOBI                     | [Link](https://arxiv.org/abs/2311.09529)          |
+| GatorTronGPT  | November 2023  | 22 billion   | ✓       | ✗       | University of Florida       | [Link](https://github.com/uf-hobi-informatics-lab/GatorTronGPT)   |
 | Gemini Pro    | December 2023  | 1.8 billion  | ✗       | ✓       | Google DeepMind             | [Link](https://deepmind.google/technologies/gemini/) |
 | Gemini Ultra  | February 2024  | 2 million    | ✗       | ✓       | Google DeepMind             | [Link](https://deepmind.google/technologies/gemini/) |
 | BioMistral    | February 2024  | 7 billion    | ✓       | ✗       | Labrak et al.               | [Link](https://huggingface.co/BioMistral/BioMistral-7B) |
-| Med-Gemini    | April 2024     | 2 million    | ✓       | ✗       | Google DeepMind             | [Link](https://arxiv.org/abs/2404.15454)          |
+| Med-Gemini    | April 2024     | 2 million    | ✓       | ✗       | Google DeepMind             | [Link](https://arxiv.org/pdf/2404.18416)        |
 | LLaMA 3.1     | July 2024      | 405 billion  | ✗       | ✓       | Meta                        | [Link](https://ai.meta.com/blog/meta-llama-3/)     |
 | LLaMA 3.3     | December 2024  | 70 billion   | ✗       | ✓       | Meta                        | [Link](https://ai.meta.com/blog/meta-llama-3/)     |
-| DeepSeek V3   | December 2024  | 671 billion  | ✗       | ✓       | DeepSeek                    | [Link](https://arxiv.org/abs/2405.14200)          |
+| DeepSeek V3   | December 2024  | 671 billion  | ✗       | ✓       | DeepSeek                    | [Link](https://www.deepseek.com/en)          |
 ----
