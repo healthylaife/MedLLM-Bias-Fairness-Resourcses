@@ -13,7 +13,9 @@
 | [CMExam](https://github.com/williamliujl/CMExam)         | Sourced from the Chinese National Medical Licensing Examination, featuring multiple-choice questions with detailed explanations.               | 60,000+  | GPT-4, ChatGLM, ChatGLM-CMExam                               | Medical Licensing Exam QA, Clinical Competency Assessment                      |
 | [MedBench](https://arxiv.org/abs/2407.10990)       | Chinese benchmark covering 43 clinical specialties, designed to evaluate Med LLMs across multiple dimensions.                                  | 300,000+ | ChatGLM, HuaTao, Baichuan-13B                                | Medical QA, Clinical Reasoning, Ethical Evaluation                             |
 | [MedCalc-Bench](https://github.com/ncbi-nlp/MedCalc-Bench)  | Manually reviewed instances (patient note, question, correct answer, and a step-by-step explanation) from 55 different medical tasks.          | 1,000    | GPT-4, GPT-3.5, Llama 3, Mistral, PMC-LLaMA, MediTron        | Medical Calculations, Quantitative Reasoning, Clinical Decision Support        |
-
+| [MedDistractQA](https://github.com/nyuolab/MedDistractQA)  | A USMLE-style QA benchmark that integrates real-world distractions LLMs encounter         |-| GPT-4, o3, Claude, Med-PaLM 2 and LLaMA3-70B      | Assess LLMs' performance when confounding distractions are introduced in medical QA        |
+| [MedPerturb](https://github.com/abinithago/MedPerturb)  | A set of perturbed clinical vignettes under 3 conditions: 1) gender-swapping, 2) style variations, and 3) changing formats   |800| GPT-4, LLaMA3-8B, LLaMA3-3-70b, Palmyra-Med (70B)      | Med-QA, Summarization, multi-turn QA |
+| [AfriMed-QA](https://github.com/intron-innovation/AfriMed-QA)  | Pan-African medical question answering dataset, developed for Africa-centric healthcare concerns   |24,000| 30 LLMs including GPT-4, Phi-3, OpenBioLLM, Gemini     | rofessional MCQ style QA, open-ended short med QA (SAQ)|
 ------
 
 
@@ -32,6 +34,8 @@
 | [EquityGuard](https://arxiv.org/html/2410.05180v2)     | Aimed at identifying health inequity through social determinants of health                                                                                      | GPT-4, GPT-4o Mini, Gemini, Claude                        | MedQA, MedMCQA                                | Med-QA                                         | Social bias                              |
 | [HealthBench](https://openai.com/index/healthbench/)     | A multilingual (49 languages) benchmark designed to evaluate both general-purpose and medical LLMs across 10 clinical tasks.                                     | Multiple LLMs (e.g., GPT-4, GPT-4o Mini, Gemini, Claude) | HealthSearchQA                                | Med-QA, summarization, safety and fairness     | Hallucination, factuality                |
 | [BRIDGE](https://arxiv.org/abs/2504.19467)          | A multilingual benchmark (87 tasks in 9 languages) evaluating LLMs for real-world clinical practice using structured evaluation of reasoning, hallucination, and safety. | 52 LLMs including GPT-4o, Gemini, LLaMA 4, DeepSeek-R1 | BRIDGE                                       | Med-QA, clinical decision-making, reasoning, safety | Factuality, Reasoning bias, hallucination |
+| [CLINIC](https://github.com/AikyamLab/clinic?tab=readme-ov-file)          |  A multilingual benchmark consisting 18 tasks in 15 languages(e.g., Chinese, Arabic, Bengali) evaluating LLMs for real-world clinical practice using structured evaluation of reasoning, hallucination, and safety. | GPT-4o| CLINIC                                       |  open-ended question answering, multiple-choice questions (MCQs), and masked token prediction | Factuality, Reasoning bias, safety, privacy |
+| [PatientAgentBench](https://github.com/amazon-science/PatientAgentBench)          |  An agentic evaluation which is scored by an LLM-as-a-Jury over 102 clinician-grounded criteria across six dimensions, with performance separated by patient demographics | Claude (Opus 4.8, Sonnet 5, Haiku 4.5), GPT-5.5, GPT-5.4, GPT-OSS-120B, Gemini 3 Flash, Gemini 3.1 Pro, Qwen3-235B, Qwen3-Next-80B | 1,200 synthetic patient scenarios (not released)           |  Multi-turn dialogue, clinical decision making, triage  | Demographic bias (age, gender identity), clinical safety and triage disparity |
 -----
 
 **Bias Evaluation Metrics Commonly Used in Med LLMs**
@@ -44,7 +48,7 @@
 |                           | Pearson’s Chi-Squared test          | Compares observed and expected outcomes                                                      |
 |                           | Wald Test                           | Tests the effect of any feature on the treatment                                             |
 |                           | Kendall τ Correlation Coefficient   | Analyzes the prevalence of outcomes across subgroups                                         |
-|                           | p-value                             | The assumptions that the null-hypothesis is true                                             |
+|                           | p-value                             | The assumption that the null hypothesis is true                                             |
 |                           | Z-test                              | Comparison among two population mean groups                                                  |
 | **Traditional Fairness Measures**  | Preferences disparity (PD)          | Measures the propensity scores                                                               |
 |                         | AssocMAD                            | The disparities of LLMs' performance among groups                                             |
