@@ -1,8 +1,8 @@
 **Overview of Med LLM characteristics and ethical deployment considerations.**
 ![Model Architecture](Figures/future.png)
 -----
-**Overview of Med LLM characteristics and ethical deployment considerations.**
-![Model Architecture](Figures/future.png)
+**Conceptual distinction in non-medical vs. medical fairness from bias origins to fair outcomes.**
+![Fairness](Figures/fairness.png)
 -----
 **Benchmarking Datasets for Bias Evaluation of Med LLMs.**
 | Dataset         | Description                                                                                                                                     | Size     | Target LLM(s)                                               | Clinical Tasks                                                                 |
