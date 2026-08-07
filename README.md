@@ -1,6 +1,9 @@
 **Overview of Med LLM characteristics and ethical deployment considerations.**
 ![Model Architecture](Figures/future.png)
 -----
+**Overview of Med LLM characteristics and ethical deployment considerations.**
+![Model Architecture](Figures/future.png)
+-----
 **Benchmarking Datasets for Bias Evaluation of Med LLMs.**
 | Dataset         | Description                                                                                                                                     | Size     | Target LLM(s)                                               | Clinical Tasks                                                                 |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------|----------|--------------------------------------------------------------|--------------------------------------------------------------------------------|
@@ -38,35 +41,42 @@
 | [PatientAgentBench](https://github.com/amazon-science/PatientAgentBench)          |  An agentic evaluation which is scored by an LLM-as-a-Jury over 102 clinician-grounded criteria across six dimensions, with performance separated by patient demographics | Claude (Opus 4.8, Sonnet 5, Haiku 4.5), GPT-5.5, GPT-5.4, GPT-OSS-120B, Gemini 3 Flash, Gemini 3.1 Pro, Qwen3-235B, Qwen3-Next-80B | 1,200 synthetic patient scenarios (not released)           |  Multi-turn dialogue, clinical decision making, triage  | Demographic bias (age, gender identity), clinical safety and triage disparity |
 -----
 
-**Bias Evaluation Metrics Commonly Used in Med LLMs**
+**Bias Evaluation Metrics Commonly Used in Medical LLMs**
 
-| Eval Type                  | Method                              | Description (what is measured)                                                               |
-|---------------------------|--------------------------------------|----------------------------------------------------------------------------------------------|
-| **Statistical Analysis**  | Mann Whitney U test                 | Measures the performance differences among groups                                            |
-|                           | Benjamini-Hochberg                  | Used for multiple hypothesis testing                                                         |
-|                           | Welch’s ANOVA test                  | Compares two or more groups when the assumptions of homogeneity are violated                |
-|                           | Pearson’s Chi-Squared test          | Compares observed and expected outcomes                                                      |
-|                           | Wald Test                           | Tests the effect of any feature on the treatment                                             |
-|                           | Kendall τ Correlation Coefficient   | Analyzes the prevalence of outcomes across subgroups                                         |
-|                           | p-value                             | The assumption that the null hypothesis is true                                             |
-|                           | Z-test                              | Comparison among two population mean groups                                                  |
-| **Traditional Fairness Measures**  | Preferences disparity (PD)          | Measures the propensity scores                                                               |
-|                         | AssocMAD                            | The disparities of LLMs' performance among groups                                             |
-|                           | Disparity Impact (DI)               | Calculates word prediction probabilities between different groups (e.g., female and male)   |
-|                           | Fairness Gap                        | Compares the changes in the disparities between the original and perturbed dataset          |
-|                           | Unstereo Score                      | Measures the ratio of the stereotypical pairs (pronouns)                                     |
-| **NLP-based Metrics**     | Implicit Association Test (IAT)     | The frequency of the associations of specific biased words is calculated                     |
-|                           | ROUGE                               | The Rationality of the context is measured                                                       |
-|                           | BERTScore                           | Sentence similarities from the context with ground truth is compared                         |
-|                           | BLUERT                              | Analyzes semantic level correlation                                                          |
-|                           | BARTScore+ & ++                     | Measures semantic similarities                                                               |
-|                           | Semantic Entropy (SE)               | Measures uncertainties in LLM-generated responses                                            |
-|                           | Normalized Mutual Information (MI)  | Calculates the question relevance                                                            |
-|                           | Contextual Modification Score (CMS) | Calculates the alignment between adversarial statement and generated text                   |
-|                           | Medical Natural Language Inference  | Evaluates the consistency of the generated text                                              |
-|                           | CTRLEval                            | Evaluates the consistency of the generated text                                              |
-|                           | Bias Tendency Index                 | Evaluates the bias tendency of left-right ground truth based on label position              |
-|                           | Maj@5                               | Test answer accuracy from the majority of votes                                             |
+| Eval Type | Method | Description (What Is Measured) |
+|---|---|---|
+| **Statistical Analysis** | Mann–Whitney U test | Measures performance differences among groups |
+|  | Benjamini–Hochberg | Used for multiple-hypothesis testing |
+|  | Welch’s ANOVA test | Compares two or more groups when the assumption of homogeneity is violated |
+|  | Pearson’s chi-squared test | Compares observed and expected outcomes |
+|  | Wald test | Tests the effect of a feature on the treatment |
+|  | Kendall’s τ correlation coefficient | Analyzes the prevalence of outcomes across subgroups |
+|  | p-value | Measures the probability of obtaining the observed results under the null hypothesis |
+|  | Z-test | Compares the means of two population groups |
+|  | Kullback–Leibler (KL) divergence | Measures differences between biased outcome distributions |
+| **Fairness Measures/Disparity Metrics** | Statistical Parity Difference (SPD) | Evaluates whether outcomes are distributed equally across demographic groups |
+|  | Preference Disparity (PD) | Measures disparities in propensity scores |
+|  | AssocMAD | Measures disparities in LLM performance among groups |
+|  | Disparate Impact (DI) | Calculates differences in word-prediction probabilities between groups (e.g., female and male) |
+|  | Fairness Gap | Compares disparities between the original and perturbed datasets |
+|  | UnStereo Score | Measures the ratio of stereotypical pairs involving pronouns |
+|  | Implicit Association Test (IAT) | Calculates the frequency of associations with specific biased words |
+|  | Diagnostic Recommendation Divergence (DRD) | Calculates variation in LLM-provided diagnoses for the same groups |
+|  | Action Disparity Index (ADI) | Measures disparities in the level of clinical action recommendations |
+|  | Referral Frequency Parity (RFP) | Assesses disparities in LLM referral frequency across demographic groups |
+|  | Diagnosis Bias Score | Measures the ratio of predicted disease samples (PD) to actual samples (AD), indicating an LLM’s inclination toward a disease |
+|  | Turn of Flip (ToF) | Measures consistency by counting the earliest turn at which the model flips |
+| **NLP-Based Metrics** | ROUGE | Measures the rationality of the context |
+|  | BERTScore | Compares sentence similarity between the context and ground truth |
+|  | BLEURT | Analyzes semantic-level correlation |
+|  | BARTScore+ and BARTScore++ | Measure semantic similarity |
+|  | Semantic Entropy (SE) | Measures uncertainty in LLM-generated responses |
+|  | Normalized Mutual Information (MI) | Calculates question relevance |
+|  | Contextual Modification Score (CMS) | Calculates alignment between an adversarial statement and the generated text |
+|  | Medical Natural Language Inference | Evaluates the consistency of generated text |
+||  | Contextual Modification Score (  | CTRLEval | Evaluates the consistency of generated text |
+|  | Bias Tendency Index | Evaluates bias tendencies in left–right ground-truth labels |
+|  | Maj@5 | Tests answer accuracy using the majority of votes |
 -----
 
 **Timeline for LLMs Focused on Medical-specific Tasks**
