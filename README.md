@@ -115,3 +115,15 @@ This repository provides a curated collection of resources for studying bias and
 | LLaMA 3.3     | December 2024  | 70 billion   | ✗       | ✓       | Meta                        | [Link](https://ai.meta.com/blog/meta-llama-3/)     |
 | DeepSeek V3   | December 2024  | 671 billion  | ✗       | ✓       | DeepSeek                    | [Link](https://www.deepseek.com/en)          |
 ----
+
+##### Citing this survey:
+
+Our survey can be found as [preprint](https://osf.io/preprints/osf/fqejh):
+```
+@article{adiba2025bias,
+  title={Bias and Fairness in Medical LLMs: An Extensive Scoping Review},
+  author={Adiba, Farzana and Zhang, Yifan and Beheshti, Rahmatollah},
+  publisher={OSF}
+}
+
+```
