@@ -123,7 +123,10 @@ Our survey can be found as [preprint](https://osf.io/preprints/osf/fqejh):
 @article{adiba2025bias,
   title={Bias and Fairness in Medical LLMs: An Extensive Scoping Review},
   author={Adiba, Farzana and Zhang, Yifan and Beheshti, Rahmatollah},
-  publisher={OSF}
+  url={https://osf.io/preprints/osf/fqejh_v1},
+  publisher={OSF},
+  year={2025},
+  month={Jun}
 }
 
 ```
