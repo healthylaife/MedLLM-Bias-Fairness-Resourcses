@@ -3,11 +3,6 @@
 This repository provides a curated collection of resources for studying bias and fairness in medical large language models (MedLLMs). It is intended to support researchers and practitioners in understanding how bias may emerge, how it can be evaluated, and what resources are available for developing fairer and more equitable medical LLM systems.
 
 -----
-**Overview of Med LLM characteristics and ethical deployment considerations.**
-![Model Architecture](Figures/future.png)
-
-
------
 
 **Conceptual distinction in non-medical vs. medical fairness from bias origins to fair outcomes.**
 ![Fairness](Figures/fairness.png)
